@@ -14,7 +14,6 @@
 		271C0E4D2956CA6900A34D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271C0E4C2956CA6900A34D97 /* Assets.xcassets */; };
 		271C0E502956CA6900A34D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271C0E4E2956CA6900A34D97 /* LaunchScreen.storyboard */; };
 		271C0E582956D15100A34D97 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271C0E572956D15100A34D97 /* LoginScreen.swift */; };
-		27C82D07295B4B6F001E75C8 /* LoginScreenContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C82D06295B4B6F001E75C8 /* LoginScreenContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		271C0E4F2956CA6900A34D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		271C0E512956CA6900A34D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		271C0E572956D15100A34D97 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
-		27C82D06295B4B6F001E75C8 /* LoginScreenContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				271C0E452956CA6800A34D97 /* SceneDelegate.swift */,
 				271C0E472956CA6800A34D97 /* MainViewController.swift */,
 				271C0E572956D15100A34D97 /* LoginScreen.swift */,
-				27C82D06295B4B6F001E75C8 /* LoginScreenContent.swift */,
 				271C0E492956CA6800A34D97 /* Main.storyboard */,
 				271C0E4C2956CA6900A34D97 /* Assets.xcassets */,
 				271C0E4E2956CA6900A34D97 /* LaunchScreen.storyboard */,
@@ -144,7 +141,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27C82D07295B4B6F001E75C8 /* LoginScreenContent.swift in Sources */,
 				271C0E482956CA6800A34D97 /* MainViewController.swift in Sources */,
 				271C0E582956D15100A34D97 /* LoginScreen.swift in Sources */,
 				271C0E442956CA6800A34D97 /* AppDelegate.swift in Sources */,

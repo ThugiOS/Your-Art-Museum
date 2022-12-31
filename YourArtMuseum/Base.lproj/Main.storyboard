@@ -20,67 +20,73 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SDK-LQ-urV" customClass="LoginScreenContent" customModule="YourArtMuseum" customModuleProvider="target">
-                                <rect key="frame" x="71" y="195" width="250" height="462"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pju-hz-SVc">
+                                <rect key="frame" x="71" y="177" width="251" height="498"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOUR ART MUSEUM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rt6-YM-b6C">
-                                        <rect key="frame" x="0.0" y="0.0" width="158" height="151"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFU-10-sWY">
+                                        <rect key="frame" x="8" y="2" width="171" height="143"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="143" id="q8S-3a-dGK"/>
+                                        </constraints>
+                                        <string key="text">YOUR
+ART
+MUSEUM</string>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="36"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAa-sA-rfx">
-                                        <rect key="frame" x="0.0" y="219" width="250" height="84"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfr-We-hcK">
+                                        <rect key="frame" x="8" y="137" width="152.33333333333334" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="CVY-mJ-fH8"/>
+                                        </constraints>
+                                        <string key="text">151 3rd St
+San Francisco, CA 94103</string>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H83-9N-jie">
+                                        <rect key="frame" x="0.0" y="200" width="251" height="78"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FzJ-WS-Pdw">
-                                                <rect key="frame" x="0.0" y="42" width="250" height="1"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrF-yL-aKa">
+                                                <rect key="frame" x="0.0" y="3" width="251" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lp2-dy-pCh">
+                                                <rect key="frame" x="0.0" y="39" width="251" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjW-4x-ThY">
-                                        <rect key="frame" x="0.0" y="170" width="143" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">151 3rd St
-San Francisco, CA 94103</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot your password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2q-PV-A74">
-                                        <rect key="frame" x="145" y="308" width="105" height="12"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JtM-6V-RIT">
-                                        <rect key="frame" x="0.0" y="356" width="250" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don’t have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OG2-Gm-ebz">
-                                        <rect key="frame" x="0.0" y="406" width="114" height="12"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Sfr-We-hcK" firstAttribute="top" secondItem="pju-hz-SVc" secondAttribute="top" constant="137" id="JJb-5m-1hd"/>
+                                    <constraint firstItem="Sfr-We-hcK" firstAttribute="leading" secondItem="pju-hz-SVc" secondAttribute="leadingMargin" id="Mhl-Da-2bE"/>
+                                    <constraint firstItem="H83-9N-jie" firstAttribute="leading" secondItem="pju-hz-SVc" secondAttribute="leading" id="Q7p-XX-a5k"/>
+                                    <constraint firstItem="H83-9N-jie" firstAttribute="top" secondItem="Sfr-We-hcK" secondAttribute="bottom" constant="21" id="XFz-IM-f4A"/>
+                                    <constraint firstItem="WFU-10-sWY" firstAttribute="top" secondItem="pju-hz-SVc" secondAttribute="top" constant="2" id="dGM-DP-L4l"/>
+                                    <constraint firstAttribute="bottom" secondItem="H83-9N-jie" secondAttribute="bottom" constant="220" id="hVd-wq-3qR"/>
+                                    <constraint firstItem="Sfr-We-hcK" firstAttribute="leading" secondItem="WFU-10-sWY" secondAttribute="leading" id="nXM-OV-c6s"/>
+                                    <constraint firstItem="H83-9N-jie" firstAttribute="centerX" secondItem="pju-hz-SVc" secondAttribute="centerX" id="p6s-o8-Ruh"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="14W-FN-Y1j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C1U-By-glA"/>
+                            <constraint firstItem="pju-hz-SVc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="UD2-4J-rJT"/>
+                            <constraint firstItem="pju-hz-SVc" firstAttribute="centerY" secondItem="14W-FN-Y1j" secondAttribute="centerY" id="acR-5e-BYB"/>
                             <constraint firstAttribute="bottom" secondItem="14W-FN-Y1j" secondAttribute="bottom" id="fxM-Ag-QUe"/>
                             <constraint firstItem="14W-FN-Y1j" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="hIY-NA-u3d"/>
                             <constraint firstItem="14W-FN-Y1j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pXc-dc-uws"/>
+                            <constraint firstItem="pju-hz-SVc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="wCD-MJ-Xk8"/>
+                            <constraint firstItem="pju-hz-SVc" firstAttribute="centerX" secondItem="14W-FN-Y1j" secondAttribute="centerX" id="wtb-dS-YS6"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -90,17 +96,11 @@ San Francisco, CA 94103</string>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
