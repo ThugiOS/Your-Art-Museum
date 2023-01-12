@@ -21,8 +21,35 @@
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pju-hz-SVc">
-                                <rect key="frame" x="71" y="177" width="251" height="498"/>
+                                <rect key="frame" x="71" y="299" width="251" height="405"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="EDW-Ob-LDH">
+                                        <rect key="frame" x="0.0" y="199" width="251" height="85"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYC-6R-dv5" customClass="LoginField" customModule="YourArtMuseum" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="251" height="42"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="PZa-n0-g1y"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email address"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d78-sY-BiY" customClass="LoginField" customModule="YourArtMuseum" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="43" width="251" height="42"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="wHT-NQ-Fd7"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureEntry" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFU-10-sWY">
                                         <rect key="frame" x="8" y="2" width="171" height="143"/>
                                         <constraints>
@@ -46,33 +73,56 @@ San Francisco, CA 94103</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H83-9N-jie">
-                                        <rect key="frame" x="0.0" y="200" width="251" height="78"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrF-yL-aKa">
-                                                <rect key="frame" x="0.0" y="3" width="251" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lp2-dy-pCh">
-                                                <rect key="frame" x="0.0" y="39" width="251" height="1"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJ6-hh-IGi">
+                                        <rect key="frame" x="140.66666666666666" y="284" width="110.33333333333334" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="sX9-kK-gfL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nd-C4-AJW" customClass="LoginButton" customModule="YourArtMuseum" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="327" width="251" height="42"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="fXr-LG-gTf"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Log In">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gb-n2-H3l">
+                                        <rect key="frame" x="0.0" y="369" width="113.33333333333333" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="idR-Tl-RXP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="EDW-Ob-LDH" firstAttribute="leading" secondItem="pju-hz-SVc" secondAttribute="leading" id="02k-lG-toL"/>
+                                    <constraint firstItem="3Nd-C4-AJW" firstAttribute="leading" secondItem="pju-hz-SVc" secondAttribute="leading" id="8AC-Tz-Sid"/>
+                                    <constraint firstAttribute="trailing" secondItem="EDW-Ob-LDH" secondAttribute="trailing" id="ENI-YE-Fkw"/>
                                     <constraint firstItem="Sfr-We-hcK" firstAttribute="top" secondItem="pju-hz-SVc" secondAttribute="top" constant="137" id="JJb-5m-1hd"/>
                                     <constraint firstItem="Sfr-We-hcK" firstAttribute="leading" secondItem="pju-hz-SVc" secondAttribute="leadingMargin" id="Mhl-Da-2bE"/>
-                                    <constraint firstItem="H83-9N-jie" firstAttribute="leading" secondItem="pju-hz-SVc" secondAttribute="leading" id="Q7p-XX-a5k"/>
-                                    <constraint firstItem="H83-9N-jie" firstAttribute="top" secondItem="Sfr-We-hcK" secondAttribute="bottom" constant="21" id="XFz-IM-f4A"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Nd-C4-AJW" secondAttribute="trailing" id="VNY-Sp-XjC"/>
+                                    <constraint firstItem="MJ6-hh-IGi" firstAttribute="top" secondItem="EDW-Ob-LDH" secondAttribute="bottom" id="Wfx-I7-Znr"/>
+                                    <constraint firstItem="MJ6-hh-IGi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pju-hz-SVc" secondAttribute="leading" constant="20" symbolic="YES" id="bpK-s4-bkK"/>
+                                    <constraint firstItem="3Nd-C4-AJW" firstAttribute="top" secondItem="d78-sY-BiY" secondAttribute="bottom" constant="43" id="crU-4r-fCp"/>
                                     <constraint firstItem="WFU-10-sWY" firstAttribute="top" secondItem="pju-hz-SVc" secondAttribute="top" constant="2" id="dGM-DP-L4l"/>
-                                    <constraint firstAttribute="bottom" secondItem="H83-9N-jie" secondAttribute="bottom" constant="220" id="hVd-wq-3qR"/>
+                                    <constraint firstItem="0Gb-n2-H3l" firstAttribute="top" secondItem="3Nd-C4-AJW" secondAttribute="bottom" id="e6h-jf-4VT"/>
+                                    <constraint firstItem="0Gb-n2-H3l" firstAttribute="leading" secondItem="pju-hz-SVc" secondAttribute="leading" id="eg3-YL-SKW"/>
+                                    <constraint firstItem="EDW-Ob-LDH" firstAttribute="top" secondItem="Sfr-We-hcK" secondAttribute="bottom" constant="20" id="iok-ry-JFg"/>
                                     <constraint firstItem="Sfr-We-hcK" firstAttribute="leading" secondItem="WFU-10-sWY" secondAttribute="leading" id="nXM-OV-c6s"/>
-                                    <constraint firstItem="H83-9N-jie" firstAttribute="centerX" secondItem="pju-hz-SVc" secondAttribute="centerX" id="p6s-o8-Ruh"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WFU-10-sWY" secondAttribute="trailing" constant="20" symbolic="YES" id="nbA-85-ebr"/>
+                                    <constraint firstAttribute="trailing" secondItem="MJ6-hh-IGi" secondAttribute="trailing" id="tH0-uf-icd"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sfr-We-hcK" secondAttribute="trailing" constant="20" symbolic="YES" id="u2m-EG-2ka"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Gb-n2-H3l" secondAttribute="trailing" constant="20" symbolic="YES" id="xBE-af-1KA"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -80,13 +130,13 @@ San Francisco, CA 94103</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="14W-FN-Y1j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C1U-By-glA"/>
-                            <constraint firstItem="pju-hz-SVc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="UD2-4J-rJT"/>
-                            <constraint firstItem="pju-hz-SVc" firstAttribute="centerY" secondItem="14W-FN-Y1j" secondAttribute="centerY" id="acR-5e-BYB"/>
+                            <constraint firstItem="pju-hz-SVc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="MdU-a2-ZyF"/>
+                            <constraint firstItem="pju-hz-SVc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="cpW-oS-E4p"/>
                             <constraint firstAttribute="bottom" secondItem="14W-FN-Y1j" secondAttribute="bottom" id="fxM-Ag-QUe"/>
                             <constraint firstItem="14W-FN-Y1j" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="hIY-NA-u3d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pju-hz-SVc" secondAttribute="bottom" constant="114" id="jKx-Gu-JDj"/>
                             <constraint firstItem="14W-FN-Y1j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pXc-dc-uws"/>
-                            <constraint firstItem="pju-hz-SVc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="wCD-MJ-Xk8"/>
-                            <constraint firstItem="pju-hz-SVc" firstAttribute="centerX" secondItem="14W-FN-Y1j" secondAttribute="centerX" id="wtb-dS-YS6"/>
+                            <constraint firstItem="pju-hz-SVc" firstAttribute="centerX" secondItem="14W-FN-Y1j" secondAttribute="centerX" id="rEZ-6z-3l0"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -101,6 +151,9 @@ San Francisco, CA 94103</string>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
