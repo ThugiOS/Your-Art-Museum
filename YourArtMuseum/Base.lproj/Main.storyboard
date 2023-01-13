@@ -19,6 +19,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14W-FN-Y1j" customClass="LoginScreen" customModule="YourArtMuseum" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <gestureRecognizers/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pju-hz-SVc">
                                 <rect key="frame" x="71" y="299" width="251" height="405"/>
@@ -138,9 +139,17 @@ San Francisco, CA 94103</string>
                             <constraint firstItem="14W-FN-Y1j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pXc-dc-uws"/>
                             <constraint firstItem="pju-hz-SVc" firstAttribute="centerX" secondItem="14W-FN-Y1j" secondAttribute="centerX" id="rEZ-6z-3l0"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aYB-tg-aGg" appends="YES" id="xDW-Hv-Rvo"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aYB-tg-aGg">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="BYZ-38-t0r" id="xwp-aR-ePd"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="345.80152671755724" y="66.901408450704224"/>
         </scene>

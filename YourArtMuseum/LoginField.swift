@@ -54,6 +54,8 @@ class LoginField: UIView {
         backgroundColor = .clear
         clipsToBounds = false
         
+        textField.textColor = UIColor(named: "placeholderColor")
+        
         backgroundView.backgroundColor = .white
         
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
@@ -75,5 +77,14 @@ class LoginField: UIView {
             textField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -13.0),
             textField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -14.0)
         ])
+        
+        let tapGesture = UITapGestureRecognizer.init(target: self,
+                                                     action: #selector(fieldTapped(_:)))
+        backgroundView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc
+    func fieldTapped(_ sender: UITapGestureRecognizer) {
+        textField.becomeFirstResponder() 
     }
 }
