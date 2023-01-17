@@ -27,6 +27,6 @@ class LoginButton: UIButton {
     
     @objc
     func tap() {
-        print("tap")
+        print("taping button Log In")
     }
 }

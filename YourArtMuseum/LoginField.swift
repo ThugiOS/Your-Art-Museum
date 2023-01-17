@@ -49,6 +49,15 @@ class LoginField: UIView {
     var text: String {
         textField.text ?? ""
     }
+
+    var keyboardType: UIKeyboardType {
+        get {
+            textField.keyboardType
+        }
+        set {
+            textField.keyboardType = newValue
+        }
+    }
     
     private func setupView() {
         backgroundColor = .clear
@@ -86,5 +95,9 @@ class LoginField: UIView {
     @objc
     func fieldTapped(_ sender: UITapGestureRecognizer) {
         textField.becomeFirstResponder() 
+    }
+
+    override var isFirstResponder: Bool {
+        textField.isFirstResponder
     }
 }

@@ -11,7 +11,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="YourArtMuseum" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController keyboardType="off" id="BYZ-38-t0r" customClass="MainViewController" customModule="YourArtMuseum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <gestureRecognizers/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cg2-2l-NRi">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="cg2-2l-NRi">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pju-hz-SVc">
@@ -159,11 +159,16 @@ San Francisco, CA 94103</string>
                             <outletCollection property="gestureRecognizers" destination="aYB-tg-aGg" appends="YES" id="xDW-Hv-Rvo"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="cg2-2l-NRi" id="zQL-0T-DMd"/>
+                        <outlet property="userEmailAdress" destination="sYC-6R-dv5" id="VXq-rG-99l"/>
+                        <outlet property="userPassword" destination="d78-sY-BiY" id="CMg-xt-rkh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="aYB-tg-aGg">
                     <connections>
-                        <action selector="backgroundTapped:" destination="BYZ-38-t0r" id="xwp-aR-ePd"/>
+                        <action selector="backgroundTapped:" destination="BYZ-38-t0r" id="HtS-Y6-PDx"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
