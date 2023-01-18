@@ -28,6 +28,12 @@ class MainViewController: UIViewController {
         view.endEditing(false)
     }
     
+    @IBAction
+    func logInTapped(_ sender: UIButton) {
+        print(userEmailAdress.text)
+        print(userPassword.text)
+    }
+    
     //MARK: adaptation of content after calling the keyboard
     @objc
     func keyboardWillChangeFrame(_ notification: NSNotification) {

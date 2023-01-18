@@ -88,6 +88,9 @@ San Francisco, CA 94103</string>
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="logInTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="uPa-BN-nxY"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gb-n2-H3l">
                                                 <rect key="frame" x="0.0" y="369" width="113.33333333333333" height="24"/>
