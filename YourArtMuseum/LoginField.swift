@@ -90,6 +90,8 @@ class LoginField: UIView {
         let tapGesture = UITapGestureRecognizer.init(target: self,
                                                      action: #selector(fieldTapped(_:)))
         backgroundView.addGestureRecognizer(tapGesture)
+        
+        textField.delegate = self // extention
     }
     
     @objc
@@ -99,5 +101,15 @@ class LoginField: UIView {
 
     override var isFirstResponder: Bool {
         textField.isFirstResponder
+    }
+}
+
+
+extension LoginField: UITextFieldDelegate {
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String
+    ) -> Bool {
+        return string.allSatisfy { !$0.isWhitespace }
     }
 }
