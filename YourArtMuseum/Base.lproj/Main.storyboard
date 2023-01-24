@@ -149,13 +149,14 @@ San Francisco, CA 94103</string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="pju-hz-SVc" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="8GJ-0H-vwL"/>
                             <constraint firstItem="14W-FN-Y1j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C1U-By-glA"/>
-                            <constraint firstItem="cg2-2l-NRi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jwb-0n-MPV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cg2-2l-NRi" secondAttribute="bottom" id="Y0Y-OX-TJi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cg2-2l-NRi" secondAttribute="trailing" id="cb2-xa-zmE"/>
+                            <constraint firstItem="cg2-2l-NRi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jwb-0n-MPV"/>
+                            <constraint firstAttribute="bottom" secondItem="cg2-2l-NRi" secondAttribute="bottom" id="Y0Y-OX-TJi"/>
+                            <constraint firstAttribute="trailing" secondItem="cg2-2l-NRi" secondAttribute="trailing" id="cb2-xa-zmE"/>
                             <constraint firstAttribute="bottom" secondItem="14W-FN-Y1j" secondAttribute="bottom" id="fxM-Ag-QUe"/>
                             <constraint firstItem="14W-FN-Y1j" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="hIY-NA-u3d"/>
-                            <constraint firstItem="cg2-2l-NRi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hoG-Cx-pvQ"/>
+                            <constraint firstItem="cg2-2l-NRi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hoG-Cx-pvQ"/>
                             <constraint firstItem="14W-FN-Y1j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pXc-dc-uws"/>
                         </constraints>
                         <connections>
