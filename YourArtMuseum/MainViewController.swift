@@ -21,6 +21,7 @@ class MainViewController: UIViewController {
         
         // change type keyboard for email
         userEmailAdress.keyboardType = .emailAddress
+//        scrollView.contentInsetAdjustmentBehavior = .never
     }
     
     @IBAction
@@ -45,7 +46,7 @@ class MainViewController: UIViewController {
 
         scrollView.contentInset = UIEdgeInsets(top: 0.0,
                                                left: 0.0,
-                                               bottom: scrollView.frame.maxY - keyboardFrame.maxY,
+                                               bottom: scrollView.frame.maxY - keyboardFrame.minY,
                                                right: 0.0)
 
         let textFields = [userEmailAdress!, userPassword!]
@@ -54,7 +55,7 @@ class MainViewController: UIViewController {
             
             let frame = firstResponder.frame.inset(by: UIEdgeInsets(top: -10,
                                                                     left: -10,
-                                                                    bottom: -300,
+                                                                    bottom: -10,
                                                                     right: -10))
             
             let newOrigin = scrollView.convert(frame.origin, from: firstResponder.superview)
