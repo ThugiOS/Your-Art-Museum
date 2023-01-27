@@ -55,7 +55,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFU-10-sWY">
-                                                <rect key="frame" x="8" y="340" width="171" height="143"/>
+                                                <rect key="frame" x="8" y="350" width="171" height="143"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="143" id="q8S-3a-dGK"/>
                                                 </constraints>
@@ -88,6 +88,9 @@ San Francisco, CA 94103</string>
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="logInTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="uPa-BN-nxY"/>
                                                 </connections>
@@ -116,7 +119,7 @@ San Francisco, CA 94103</string>
                                             <constraint firstItem="3Nd-C4-AJW" firstAttribute="leading" secondItem="pju-hz-SVc" secondAttribute="leading" id="8AC-Tz-Sid"/>
                                             <constraint firstAttribute="trailing" secondItem="EDW-Ob-LDH" secondAttribute="trailing" id="ENI-YE-Fkw"/>
                                             <constraint firstItem="Sfr-We-hcK" firstAttribute="leading" secondItem="pju-hz-SVc" secondAttribute="leadingMargin" id="Mhl-Da-2bE"/>
-                                            <constraint firstItem="Sfr-We-hcK" firstAttribute="top" secondItem="WFU-10-sWY" secondAttribute="bottom" constant="10" id="Rl5-Mz-u0b"/>
+                                            <constraint firstItem="Sfr-We-hcK" firstAttribute="top" secondItem="WFU-10-sWY" secondAttribute="bottom" id="Rl5-Mz-u0b"/>
                                             <constraint firstAttribute="trailing" secondItem="3Nd-C4-AJW" secondAttribute="trailing" id="VNY-Sp-XjC"/>
                                             <constraint firstItem="MJ6-hh-IGi" firstAttribute="top" secondItem="EDW-Ob-LDH" secondAttribute="bottom" id="Wfx-I7-Znr"/>
                                             <constraint firstItem="MJ6-hh-IGi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pju-hz-SVc" secondAttribute="leading" constant="20" symbolic="YES" id="bpK-s4-bkK"/>
