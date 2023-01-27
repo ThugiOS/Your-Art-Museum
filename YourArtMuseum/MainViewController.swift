@@ -21,7 +21,6 @@ class MainViewController: UIViewController {
         
         // change type keyboard for email
         userEmailAdress.keyboardType = .emailAddress
-//        scrollView.contentInsetAdjustmentBehavior = .never
     }
     
     @IBAction

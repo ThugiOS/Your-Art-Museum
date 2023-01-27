@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,6 +25,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="adressLabel" destination="Sfr-We-hcK" id="8ge-wv-3qY"/>
+                                    <outlet property="mainLabel" destination="WFU-10-sWY" id="JHJ-U3-QY3"/>
+                                </connections>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="cg2-2l-NRi">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -55,14 +64,14 @@
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFU-10-sWY">
-                                                <rect key="frame" x="8" y="350" width="171" height="143"/>
+                                                <rect key="frame" x="8" y="350" width="172.33333333333334" height="143"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="143" id="q8S-3a-dGK"/>
                                                 </constraints>
                                                 <string key="text">YOUR
 ART
 MUSEUM</string>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="36"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="36"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
