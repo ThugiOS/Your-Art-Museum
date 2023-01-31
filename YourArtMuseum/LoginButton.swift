@@ -16,9 +16,7 @@ class LoginButton: UIButton {
         super.awakeFromNib()
         
         self.backgroundColor = UIColor(named: "LogInColor")
-    
-//        self.addShadow()
-        
+
         self.addTarget(self, action: #selector(tap), for: .touchUpInside)
     }
     

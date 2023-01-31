@@ -1,6 +1,6 @@
 import UIKit
 
-class MainViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var userEmailAdress: LoginField!
@@ -28,8 +28,30 @@ class MainViewController: UIViewController {
         view.endEditing(false)
     }
     
+    // data login field
     @IBAction
     func logInTapped(_ sender: UIButton) {
+        
+        var users = User(login: userEmailAdress.text, password: userPassword.text)
+        
+        // Путь и имя файла
+        let jsonUrl = try! FileManager.default.url(for: . documentDirectory, in: .allDomainsMask,
+                                                   appropriateFor: nil, create: true)
+            .appending (path: "nameFile.json")
+
+        let jsonEncoder = JSONEncoder()
+        jsonEncoder.outputFormatting = .prettyPrinted
+        jsonEncoder.dateEncodingStrategy = .iso8601
+
+        guard let result = try? jsonEncoder.encode(users) else {
+            print("Error")
+            return
+        }
+
+        try? result.write(to: jsonUrl)
+        
+        print(users)
+        print(jsonUrl)
         print(userEmailAdress.text)
         print(userPassword.text)
     }

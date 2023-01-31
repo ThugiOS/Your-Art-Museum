@@ -10,12 +10,13 @@
 		270350DB297B070E004084CB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 270350DA297B070E004084CB /* SnapKit */; };
 		271C0E442956CA6800A34D97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271C0E432956CA6800A34D97 /* AppDelegate.swift */; };
 		271C0E462956CA6800A34D97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271C0E452956CA6800A34D97 /* SceneDelegate.swift */; };
-		271C0E482956CA6800A34D97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271C0E472956CA6800A34D97 /* MainViewController.swift */; };
+		271C0E482956CA6800A34D97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271C0E472956CA6800A34D97 /* LoginViewController.swift */; };
 		271C0E4B2956CA6800A34D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271C0E492956CA6800A34D97 /* Main.storyboard */; };
 		271C0E4D2956CA6900A34D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271C0E4C2956CA6900A34D97 /* Assets.xcassets */; };
 		271C0E502956CA6900A34D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271C0E4E2956CA6900A34D97 /* LaunchScreen.storyboard */; };
 		271C0E582956D15100A34D97 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271C0E572956D15100A34D97 /* LoginScreen.swift */; };
 		273CBF6F29895A120020C727 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273CBF6E2989582D0020C727 /* Montserrat-Regular.ttf */; };
+		273CBF71298963980020C727 /* LoginJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273CBF70298963980020C727 /* LoginJson.swift */; };
 		275B8CEF29840D5400325C6A /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B8CEE29840D5400325C6A /* UIView+Shadow.swift */; };
 		27B48F9329661F2000F6A720 /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B48F9229661F2000F6A720 /* LoginField.swift */; };
 		27F21E9E297036160089F011 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F21E9D297036160089F011 /* LoginButton.swift */; };
@@ -25,13 +26,14 @@
 		271C0E402956CA6800A34D97 /* YourArtMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourArtMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		271C0E432956CA6800A34D97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		271C0E452956CA6800A34D97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		271C0E472956CA6800A34D97 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		271C0E472956CA6800A34D97 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		271C0E4A2956CA6800A34D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		271C0E4C2956CA6900A34D97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271C0E4F2956CA6900A34D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		271C0E512956CA6900A34D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		271C0E572956D15100A34D97 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		273CBF6E2989582D0020C727 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "Fonts/Montserrat-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		273CBF70298963980020C727 /* LoginJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginJson.swift; sourceTree = "<group>"; };
 		275B8CEE29840D5400325C6A /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		27B48F9229661F2000F6A720 /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
 		27F21E9D297036160089F011 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
@@ -79,7 +81,7 @@
 			children = (
 				271C0E432956CA6800A34D97 /* AppDelegate.swift */,
 				271C0E452956CA6800A34D97 /* SceneDelegate.swift */,
-				271C0E472956CA6800A34D97 /* MainViewController.swift */,
+				271C0E472956CA6800A34D97 /* LoginViewController.swift */,
 				271C0E572956D15100A34D97 /* LoginScreen.swift */,
 				27B48F9229661F2000F6A720 /* LoginField.swift */,
 				27F21E9D297036160089F011 /* LoginButton.swift */,
@@ -88,6 +90,7 @@
 				271C0E4E2956CA6900A34D97 /* LaunchScreen.storyboard */,
 				271C0E512956CA6900A34D97 /* Info.plist */,
 				275B8CEE29840D5400325C6A /* UIView+Shadow.swift */,
+				273CBF70298963980020C727 /* LoginJson.swift */,
 			);
 			path = YourArtMuseum;
 			sourceTree = "<group>";
@@ -180,10 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				275B8CEF29840D5400325C6A /* UIView+Shadow.swift in Sources */,
-				271C0E482956CA6800A34D97 /* MainViewController.swift in Sources */,
+				271C0E482956CA6800A34D97 /* LoginViewController.swift in Sources */,
 				27F21E9E297036160089F011 /* LoginButton.swift in Sources */,
 				271C0E582956D15100A34D97 /* LoginScreen.swift in Sources */,
 				27B48F9329661F2000F6A720 /* LoginField.swift in Sources */,
+				273CBF71298963980020C727 /* LoginJson.swift in Sources */,
 				271C0E442956CA6800A34D97 /* AppDelegate.swift in Sources */,
 				271C0E462956CA6800A34D97 /* SceneDelegate.swift in Sources */,
 			);
